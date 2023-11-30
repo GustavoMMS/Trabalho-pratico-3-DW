@@ -1,0 +1,45 @@
+.imgProduto{
+    height: 350px;
+    width: 350px;
+}
+
+.detalhesProduto{
+    height: 350px;
+    width: 400px;
+    border-color: orangered;
+    border-radius: 3%;
+    border-width: 5px;
+    background-color: black;
+    color: rgba(245, 245, 245, 0.911);
+}
+
+body{
+    background-color: black;
+    color: rgba(245, 245, 245, 0.911);
+}
+
+.titulo{
+    color: rgba(245, 245, 245, 0.911);
+}
+
+.card-header{
+    background-color: orangered;
+}
+
+.navbar-dark{
+    background-color: orangered;
+    color: rgba(245, 245, 245, 0.911);
+}
+
+h3{
+    font-weight: bold;
+    color: rgb(255, 136, 0);
+}
+
+.descricao{
+    border-top: 2px solid orangered ;
+}
+
+.conteudoDescricao{
+    font-size: 20px;
+}

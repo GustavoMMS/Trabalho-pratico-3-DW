@@ -1,0 +1,63 @@
+.imagem{
+    height: 300px;
+}
+
+.navbar-dark{
+    background-color: orangered;
+    color: rgba(245, 245, 245, 0.911);
+}
+
+.fundo{
+    background-color: black;
+}
+
+.nomeLoja{
+    color: rgba(245, 245, 245, 0.911);
+}
+
+#cate{
+    background-color: black;
+    border-color: orangered;
+    color: orangered;
+}
+
+.tituloProd{
+    color: orangered;
+}
+
+.fundoProduto{
+    background-color: black;
+    background-color: black;
+    color: rgba(245, 245, 245, 0.911);
+}
+
+#bordaProduto{
+    border-color: orangered;
+    border-width: 3px;
+}
+
+#preco{
+    color: rgb(255, 136, 0);
+}
+
+#conteudo{
+    color: rgba(245, 245, 245, 0.911);
+}
+
+.card{
+    border-color: orangered;
+    border-width: 5px;
+}
+
+.nomeLoja{
+    color: orangered;
+}
+
+#imagemCarrossel{
+    height: 350px;
+    width: 2500px;
+}
+
+.card-body{
+    border-top: 5px solid orangered;
+}

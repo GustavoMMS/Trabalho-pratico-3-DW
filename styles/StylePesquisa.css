@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+    color: rgba(245, 245, 245, 0.911);
+}
+
+.navbar-dark{
+    background-color: orangered;
+    color: rgba(245, 245, 245, 0.911);
+}
+
+.btn{
+    background-color: orangered;
+    color: white
+}
+
+.btn:hover{
+    background-color: orange;
+}
+
+.tituloProd{
+    color: orangered;
+}
+
+.fundoProduto{
+    background-color: black;
+    background-color: black;
+    color: rgba(245, 245, 245, 0.911);
+}
+
+#bordaProduto{
+    border-color: orangered;
+    border-width: 3px;
+}
+
+#preco{
+    color: rgb(255, 136, 0);
+}
+
+#conteudo{
+    color: rgba(245, 245, 245, 0.911);
+}
+
+.card{
+    border-color: orangered;
+    border-width: 5px;
+}
+
+.imagem{
+    height: 300px;
+}
+
+.card-body{
+    border-top: 5px solid orangered;
+}
