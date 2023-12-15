@@ -8,22 +8,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Homepage</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="scripts/ScriptHome.js"></script>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand offset-md-1" href="#">Shablau Store</a>
+            <a class="navbar-brand offset-md-1" href="index.html">Shablau Store</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse"  id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav offset-md-8">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link active" href="pesquisa.html" onclick="removeCategoria()">Pesquisar</a>
-                    <a class="nav-link active" href="#">Services</a>
+                    <a class="nav-link active" aria-current="page" href="index.html" id="botao">Home</a>
+                    <a class="nav-link active" href="pesquisa.html" onclick="removeCategoria()" id="botao">Pesquisar</a>
+
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" id="botao" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Produto
+                        </button>
+
+                        <ul class="dropdown-menu" id="menu">
+                            <li><a class="dropdown-item" id="itemMenu" href="cadastro.html" id="botao">Cadastro</a></li>
+                            <li><a class="dropdown-item" href="listagem.html" id="itemMenu" id="botao">Lista</a></li>
+                          </ul>
+                    </div>
+
                     <a class="nav-link active" href="#">Contact</a>
                 </div>
             </div>
@@ -60,7 +73,7 @@
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    
+
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>

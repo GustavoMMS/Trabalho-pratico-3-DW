@@ -1,0 +1,67 @@
+#botao:hover{
+    color: orange;
+}
+
+#botao{
+    color: white;
+}
+
+#botao:focus{
+    border-color: orange;
+}
+
+#menu{
+    background-color: orangered;
+}
+
+#itemMenu{
+    color: white;
+}
+
+#itemMenu:hover{
+    background-color: orange;
+}
+
+body{
+    background-color: black;
+}
+
+.navbar-dark{
+    background-color: orangered;
+    color: rgba(245, 245, 245, 0.911);
+}
+
+#tabelaCol{
+    background-color: orangered;
+    color: white;
+}
+
+#tabelaCol:hover{
+    background-color: orange;
+}
+
+#btnUpdate{
+    background-color: orangered;
+    color: white;
+}
+
+#btnUpdate:hover{
+    background-color: orange;
+}
+
+#btnDelete{
+    background-color: orangered;
+    color: white;
+}
+
+#btnDelete:hover{
+    background-color: orange;
+}
+tr.selecao {
+    cursor: pointer;
+    background-color: orange; /* Adicione um destaque visual */
+}
+
+.modal-dialog {
+    background-color: black;
+}

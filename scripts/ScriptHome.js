@@ -3,10 +3,10 @@ fetch('https://fakestoreapi.com/products/categories')
     .then(res => res.json())
     .then(data => {
         let str = '';
-        
-        for(let i = 0; i < data.length; i++){
+
+        for (let i = 0; i < data.length; i++) {
             let categorias = data[i];
-            
+
             str += `<a href="pesquisa.html" id="cate" class="list-group-item" onclick="salvarCategoria(this)">${categorias}</a>`;
         }
 
@@ -18,10 +18,10 @@ fetch('https://fakestoreapi.com/products?limit=3')
     .then(res => res.json())
     .then(data => {
         let str = '';
-        
-        for(let i = 0; i < data.length; i++){
+
+        for (let i = 0; i < data.length; i++) {
             let produto = data[i];
-            
+
             str += `<div class="col-md-4 my-4">
             <div class="card" id="bordaProduto">
             <a href="detalhes.html" class="text-decoration-none tituloProd" onclick="salvarIdProduto(${produto.id})"><img src="${produto.image}" class="card-img-top imagem" alt="..."></a>
@@ -44,7 +44,7 @@ fetch('https://fakestoreapi.com/products')
     .then(data => {
         let str = '';
 
-        for(let i=0; i<3; i++){
+        for (let i = 0; i < 3; i++) {
             let posicao = Math.floor(Math.random() * 20) + 1;
             let produto = data[posicao];
 
@@ -56,7 +56,32 @@ fetch('https://fakestoreapi.com/products')
         document.getElementById('imagensCarrossel').innerHTML = str;
     })
 
-function salvarCategoria(categoriaSelecionada){
+fetch('https://fakestoreapi.com/products')
+    .then(res => res.json())
+    .then(data => {
+        let str = '';
+
+        for (let i = 0; i < 3; i++) {
+            let produto = data[i];
+
+            $.ajax({
+                url: 'API_para_BD.php',
+                type: 'POST',
+                data: {id: produto.id, titulo: produto.title, preco: produto.price, descricao: produto.description, categoria: produto.category, imagem: produto.image, rate: produto.rate},
+                success: function(response){
+                    console.log("Produto deletado!");
+                },
+                error: function(){
+                    console.log("Erro ao excluir produto!");
+                }
+            });
+        }
+
+        document.getElementById('imagensCarrossel').innerHTML = str;
+    })
+
+
+function salvarCategoria(categoriaSelecionada) {
     var categoria = categoriaSelecionada.innerHTML;
     localStorage.removeItem('categoria');
     localStorage.setItem('categoria', categoria);
@@ -64,12 +89,12 @@ function salvarCategoria(categoriaSelecionada){
     localStorage.setItem('Ecategoria', 1);
 }
 
-function salvarIdProduto(id){
+function salvarIdProduto(id) {
     localStorage.removeItem('idProduto');
     localStorage.setItem('idProduto', id);
 }
 
-function removeCategoria(){
+function removeCategoria() {
     localStorage.removeItem('Ecategoria');
     localStorage.setItem('Ecategoria', 0);
 }

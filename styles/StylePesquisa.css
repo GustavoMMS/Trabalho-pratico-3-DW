@@ -52,3 +52,27 @@ body{
 .card-body{
     border-top: 5px solid orangered;
 }
+
+#botao:hover{
+    color: orange;
+}
+
+#botao{
+    color: white;
+}
+
+#botao:focus{
+    border-color: orange;
+}
+
+#menu{
+    background-color: orangered;
+}
+
+#itemMenu{
+    color: white;
+}
+
+#itemMenu:hover{
+    background-color: orange;
+}

@@ -43,3 +43,27 @@ h3{
 .conteudoDescricao{
     font-size: 20px;
 }
+
+#botao:hover{
+    color: orange;
+}
+
+#botao{
+    color: white;
+}
+
+#botao:focus{
+    border-color: orange;
+}
+
+#menu{
+    background-color: orangered;
+}
+
+#itemMenu{
+    color: white;
+}
+
+#itemMenu:hover{
+    background-color: orange;
+}

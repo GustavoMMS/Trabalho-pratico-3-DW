@@ -1,0 +1,56 @@
+.navbar-dark{
+    background-color: orangered;
+    color: rgba(245, 245, 245, 0.911);
+}
+
+body{
+    background-color: black;
+}
+
+#botao:hover{
+    color: orange;
+}
+
+#botao{
+    color: white;
+}
+
+#botao:focus{
+    border-color: orange;
+}
+
+#menu{
+    background-color: orangered;
+}
+
+#itemMenu{
+    color: white;
+}
+
+#itemMenu:hover{
+    background-color: orange;
+}
+
+#containerFormulario{
+    color: rgba(245, 245, 245, 0.911);
+    border: 2px solid orangered ;
+    padding-bottom: 1%;
+}
+
+.campo{
+    width: 85%;
+}
+
+#Cadastrar{
+    background-color: orangered;
+    color: white;
+}
+
+#Cadastrar:hover{
+    background-color: orange;
+}
+
+#textoDesc{
+    width: 100%;
+    height: 150px;
+}
